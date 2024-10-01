@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">Classes</string>
+	<string name="class_02_app_name">Class practices viewer</string>
+	<string name="main_go_button_text">Go</string>
+	<string name="main_select_class_text">Select a class</string>
+	<string name="main_actv_class_hint">Select a class</string>"
+
+	<string-array name="classes_list">
+		<item>02 - BMI calculator</item>
+		<item>03 - Grade calculator</item>
+		<item>04 - Constraint layout</item>
+		<item>05 - Card manager</item>
+		<item>06 - Grade calculator with fragments</item>
+	</string-array>
+</resources>

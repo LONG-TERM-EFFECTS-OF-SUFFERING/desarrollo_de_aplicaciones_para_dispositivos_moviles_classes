@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<LinearLayout
+		android:id="@+id/ll_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="10dp"
+		tools:context=".MainActivity">
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="5dp"
+			android:padding="10dp"
+			android:text="@string/class_02_app_name"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/tv_select_class"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:text="@string/main_select_class_text" />
+
+		<Spinner
+			android:id="@+id/spinner_classes"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+
+		<Space
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_weight="1"/>
+
+		<Button
+			android:id="@+id/btn_go"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/main_go_button_text"
+			android:textSize="20sp" />
+	</LinearLayout>
+</layout>
