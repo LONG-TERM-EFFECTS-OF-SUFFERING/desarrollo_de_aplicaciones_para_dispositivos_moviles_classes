@@ -64,12 +64,10 @@ class InputFragment : Fragment() {
             val name = binding.etName.text.toString()
             val grade_1 = binding.etGrade1.text.toString().toFloat()
             val grade_2 = binding.etGrade2.text.toString().toFloat()
+            val student = Class06Student(name, grade_1, grade_2)
 
             val bundle = Bundle()
-            bundle.putString("name", name)
-            bundle.putFloat("grade_1", grade_1)
-            bundle.putFloat("grade_2", grade_2)
-            bundle.putFloat("average", (grade_1 + grade_2) / 2)
+            bundle.putSerializable("student", student)
 
             findNavController().navigate(R.id.action_inputFragment_to_outputFragment, bundle)
         }

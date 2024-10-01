@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="class_05_toolbar_title">Cards"</string>
+	<string name="class_05_share_icon_content_description">Share icon</string>
+	<string name="class_05_open_drawer">Open drawer"</string>
+	<string name="class_05_close_drawer">Close drawer"</string>
+</resources>

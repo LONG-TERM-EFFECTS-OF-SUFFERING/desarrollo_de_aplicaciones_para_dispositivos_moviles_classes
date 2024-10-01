@@ -16,5 +16,10 @@
 	<fragment
 		android:id="@+id/outputFragment"
 		android:name="com.example.classes.class_06.OutputFragment"
-		android:label="OutputFragment" />
+		android:label="OutputFragment"
+		tools:layout="@layout/class_06_output_fragment">
+		<action
+			android:id="@+id/action_outputFragment_to_inputFragment"
+			app:destination="@id/inputFragment" />
+	</fragment>
 </navigation>

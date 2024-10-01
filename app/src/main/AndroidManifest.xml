@@ -22,6 +22,11 @@
 					<category android:name="android.intent.category.LAUNCHER" />
 				</intent-filter>
 			</activity>
+			<activity android:name=".Class_02" />
+			<activity android:name=".class_03.MainActivity" />
+			<activity android:name=".Class_04" />
+			<activity android:name=".class_05.MainActivity" />
+			<activity android:name=".class_05.TabLayoutExample" />
 			<activity android:name=".class_06.MainActivity" />
 		</application>
 

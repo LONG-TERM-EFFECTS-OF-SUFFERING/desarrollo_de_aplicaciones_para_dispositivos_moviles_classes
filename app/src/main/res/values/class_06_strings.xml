@@ -6,5 +6,6 @@
 	<string name="class_06_et_grade_1_hint">Enter your grade 1</string>
 	<string name="class_06_et_grade_2_hint">Enter your grade 2</string>
 	<string name="class_06_btn_send_data">Send data</string>>
-	<string name="class_06_tv_result">Name: %s\nCourse: %s\nGrade 1: %.2f\nGrade 2: %.2f\nResult: %.2f</string>"
+	<string name="class_06_tv_result">Name: %s\nGrade 1: %.2f\nGrade 2: %.2f\nResult: %.2f</string>"
+	<string name="class_06_btn_calculate_another_grade">Calculate another grade</string>
 </resources>

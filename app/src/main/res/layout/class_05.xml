@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/yellow"
+		tools:context=".class_05.MainActivity">
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/horizontal_guideline_90"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_percent="0.9" />
+
+		<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:id="@+id/bottom_navigation"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			app:menu="@menu/class_05_bottom_navigation_menu"
+			app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_90"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			/>
+
+		<androidx.drawerlayout.widget.DrawerLayout
+			android:id="@+id/drawer_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_90"
+			tools:openDrawer="start">
+
+			<include
+				android:id="@+id/toolbar"
+				layout="@layout/class_05_toolbar" />
+
+			<com.google.android.material.navigation.NavigationView
+				android:id="@+id/navigation_view"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_gravity="start"
+				app:headerLayout="@layout/class_05_header_drawer"
+				app:menu="@menu/class_05_drawable_menu" />
+		</androidx.drawerlayout.widget.DrawerLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

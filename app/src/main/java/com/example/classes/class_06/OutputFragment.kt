@@ -25,13 +25,26 @@ class OutputFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //navigate_to_input_fragment()
+        navigate_to_input_fragment()
+        capture_and_process_data()
     }
 
-//    private fun navigate_to_input_fragment(){
-//        binding.btn.setOnClickListener {
-//            findNavController().navigate(R.id.action_fragmentA_to_fragmentB)
-//        }
-//    }
+    private fun navigate_to_input_fragment() {
+        binding.btnCalculateAnotherGrade.setOnClickListener {
+            findNavController().navigate(R.id.action_outputFragment_to_inputFragment)
+        }
+    }
 
+    private fun capture_and_process_data() {
+        val text_view = binding.tvResult
+        val student = arguments?.getSerializable("student") as Class06Student
+        val name = student.name
+        val grade_1 = student.grade_1
+        val grade_2 = student.grade_2
+        val average = (grade_1 + grade_2) / 2
+
+        val text = getString(R.string.class_06_tv_result, name, grade_1, grade_2, average)
+
+        text_view.text = text
+    }
 }

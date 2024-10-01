@@ -36,22 +36,22 @@ class MainActivity : AppCompatActivity() {
             }
 
             when (selected_class) {
-//                "02 - BMI calculator" -> {
-//                    val intent = Intent(this, Class_02::class.java)
-//                    startActivity(intent)
-//                }
-//                "03 - Grade calculator" -> {
-//                    val intent = Intent(this, MainActivity::class.java)
-//                    startActivity(intent)
-//                }
-//                "04 - Constraint layout" -> {
-//                    val intent = Intent(this, Class_04::class.java)
-//                    startActivity(intent)
-//                }
-//                "05 - Card manager" -> {
-//                    val intent = Intent(this, com.example.classes.class_05.MainActivity::class.java)
-//                    startActivity(intent)
-//                }
+                "02 - BMI calculator" -> {
+                    val intent = Intent(this, Class_02::class.java)
+                    startActivity(intent)
+                }
+                "03 - Grade calculator" -> {
+                    val intent = Intent(this, com.example.classes.class_03.MainActivity::class.java)
+                    startActivity(intent)
+                }
+                "04 - Constraint layout" -> {
+                    val intent = Intent(this, Class_04::class.java)
+                    startActivity(intent)
+                }
+                "05 - Card manager" -> {
+                    val intent = Intent(this, com.example.classes.class_05.MainActivity::class.java)
+                    startActivity(intent)
+                }
                 "06 - Grade calculator with fragments" -> {
                     val intent = Intent(this, com.example.classes.class_06.MainActivity::class.java)
                     startActivity(intent)

@@ -1,0 +1,45 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:context=".class_05.MainActivity">
+
+		<com.google.android.material.appbar.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="@color/white"
+				app:navigationIcon="@drawable/left_arrow"
+				app:title="@string/class_05_toolbar_title"
+				app:menu="@menu/class_05_contextual_menu">
+
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:contentDescription="@string/class_05_share_icon_content_description"
+					android:focusable="true"
+					android:src="@drawable/ic_share_nodes"
+					android:clickable="true"
+					android:layout_gravity="end"
+					android:background="?selectableItemBackgroundBorderless" />
+
+
+			</androidx.appcompat.widget.Toolbar>
+
+		</com.google.android.material.appbar.AppBarLayout>
+
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
+
+
+
+

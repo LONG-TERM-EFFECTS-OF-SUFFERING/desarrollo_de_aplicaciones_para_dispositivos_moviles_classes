@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<LinearLayout
+		android:id="@+id/ll_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="10dp"
+		tools:context=".Class_02">
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="5dp"
+			android:padding="10dp"
+			android:text="@string/class_02_tv_title"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/tv_height"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:text="@string/class_02_tv_height" />
+
+		<EditText
+			android:id="@+id/et_height"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:autofillHints=""
+			android:hint="@string/class_02_et_height_hint"
+			android:inputType="numberDecimal"
+			android:maxLength="10"/>
+
+		<TextView
+			android:id="@+id/tv_weight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:text="@string/class_02_tv_weight" />
+
+		<EditText
+			android:id="@+id/et_weight"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:autofillHints=""
+			android:hint="@string/class_02_et_weight_hint"
+			android:inputType="numberDecimal"
+			android:maxLength="10"/>
+
+		<Button
+			android:id="@+id/btn_calculate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/class_02_btn_calculate"
+			android:textSize="20sp"
+			android:textColor="@color/black" />
+
+		<Button
+			android:id="@+id/btn_reset"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/class_02_btn_reset"
+			android:textSize="20sp"
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/tv_result"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="100dp"
+			android:layout_gravity="center"
+			android:textSize="20sp"
+			android:text="@string/class_02_tv_result" />
+	</LinearLayout>
+</layout>
