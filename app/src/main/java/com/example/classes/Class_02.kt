@@ -9,6 +9,7 @@ import com.example.classes.databinding.Class02Binding
 
 class Class_02 : AppCompatActivity() {
     private lateinit var binding: Class02Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.class_02)

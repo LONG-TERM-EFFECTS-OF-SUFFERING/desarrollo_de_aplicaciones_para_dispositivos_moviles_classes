@@ -13,11 +13,10 @@ import com.example.classes.databinding.Class06OutputFragmentBinding
 class OutputFragment : Fragment() {
     private lateinit var binding: Class06OutputFragmentBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = Class06OutputFragmentBinding.inflate(inflater)
         binding.lifecycleOwner = this
         return binding.root

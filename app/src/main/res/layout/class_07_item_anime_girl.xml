@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp">
+
+		<androidx.cardview.widget.CardView
+			xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/cv_anime_girls"
+			android:layout_gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:foreground="?selectableItemBackground"
+			card_view:cardCornerRadius="8dp"
+			android:elevation="8dp"
+			card_view:layout_constraintStart_toStartOf="parent"
+			card_view:layout_constraintTop_toTopOf="parent"
+			card_view:layout_constraintEnd_toEndOf="parent">
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<androidx.constraintlayout.widget.Guideline
+					android:id="@+id/vertical_guideline_25"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					app:layout_constraintGuide_percent="0.25" />
+
+				<androidx.constraintlayout.widget.Guideline
+					android:id="@+id/horizontal_guideline_40"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					app:layout_constraintGuide_percent="0.4" />
+
+				<ImageView
+					android:id="@+id/iv_anime_girl"
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:contentDescription="anime girl"
+					android:scaleType="centerCrop"
+					card_view:layout_constraintTop_toTopOf="parent"
+					card_view:layout_constraintEnd_toEndOf="@id/vertical_guideline_25"
+					card_view:layout_constraintStart_toStartOf="parent"
+					card_view:layout_constraintBottom_toBottomOf="parent"
+					android:src="@drawable/anime_girl" />
+
+
+				<TextView
+					android:id="@+id/tv_name"
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:text="Anime girl"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:layout_marginStart="10dp"
+					card_view:layout_constraintTop_toTopOf="parent"
+					card_view:layout_constraintEnd_toEndOf="parent"
+					card_view:layout_constraintBottom_toBottomOf="@id/horizontal_guideline_40"
+					card_view:layout_constraintStart_toStartOf="@id/vertical_guideline_25"
+					android:layout_marginBottom="16dp" />
+
+				<TextView
+					android:id="@+id/tv_description"
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:text="Fuerza sobrehumana, lo que le permite levantar objetos extremadamente pesados"
+					android:textSize="14sp"
+					android:layout_marginStart="10dp"
+					card_view:layout_constraintTop_toBottomOf="@+id/horizontal_guideline_40"
+					card_view:layout_constraintEnd_toEndOf="parent"
+					card_view:layout_constraintBottom_toBottomOf="parent"
+					card_view:layout_constraintStart_toStartOf="@id/vertical_guideline_25" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+		</androidx.cardview.widget.CardView>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

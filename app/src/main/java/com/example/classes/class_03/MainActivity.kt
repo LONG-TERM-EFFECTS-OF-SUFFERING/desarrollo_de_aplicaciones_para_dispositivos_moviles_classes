@@ -9,8 +9,10 @@ import androidx.databinding.DataBindingUtil
 import com.example.classes.R
 import com.example.classes.databinding.Class03Binding
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: Class03Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.class_03)

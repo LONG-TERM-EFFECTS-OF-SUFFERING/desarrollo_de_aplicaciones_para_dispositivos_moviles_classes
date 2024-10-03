@@ -56,6 +56,10 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, com.example.classes.class_06.MainActivity::class.java)
                     startActivity(intent)
                 }
+                "07 - Class 7" -> {
+                    val intent = Intent(this, com.example.classes.class_07.MainActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }

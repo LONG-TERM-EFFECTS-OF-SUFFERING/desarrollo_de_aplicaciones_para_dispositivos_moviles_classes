@@ -8,8 +8,10 @@ import com.example.classes.R
 import com.example.classes.databinding.Class05TabLayoutExampleBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
+
 class TabLayoutExample : AppCompatActivity() {
     private lateinit var binding: Class05TabLayoutExampleBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.class_05_tab_layout_example)

@@ -13,6 +13,5 @@ class Class_04 : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.class_04)
 		binding = DataBindingUtil.setContentView(this, R.layout.class_04)
-
 	}
 }

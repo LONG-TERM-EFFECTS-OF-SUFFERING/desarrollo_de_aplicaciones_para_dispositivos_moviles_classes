@@ -15,11 +15,10 @@ import com.example.classes.databinding.Class06InputFragmentBinding
 class InputFragment : Fragment() {
     private lateinit var binding: Class06InputFragmentBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = Class06InputFragmentBinding.inflate(inflater)
         binding.lifecycleOwner = this
         println("The fragment is created")

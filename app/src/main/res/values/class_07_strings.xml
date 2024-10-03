@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="class_07_user_preferences">User Preferences</string>
+	<string name="class_07_example_text">The user preferences in an Android application refer to the custom settings and options that a user can select to adapt the application according to their individual needs and preferences.</string>
+	<string name="class_07_welcome">Welcome</string>
+	<string name="class_07_dark_mode">Dark Mode</string>
+	<string name="class_07_change_language">Change Language</string>
+	<string name="class_07_camera_permission">Camera Permission</string>
+	<string name="class_07_notifications_permission">Notifications permission</string>
+	<string name="class_07_notifications">Notifications</string>
+</resources>

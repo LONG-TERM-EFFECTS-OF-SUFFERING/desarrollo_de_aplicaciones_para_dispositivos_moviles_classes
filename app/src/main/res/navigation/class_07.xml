@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/class_07"
+	app:startDestination="@id/homeFragment">
+
+	<fragment
+		android:id="@+id/homeFragment"
+		android:name="com.example.classes.class_07.fragment.HomeFragment"
+		android:label="HomeFragment"
+		tools:layout="@layout/class_07_home_fragment">
+		<action
+			android:id="@+id/action_homeFragment_to_recyclerFragment"
+			app:destination="@id/recyclerFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/recyclerFragment"
+		android:name="com.example.classes.class_07.fragment.RecyclerFragment"
+		android:label="class_07_recycler_fragment"
+		tools:layout="@layout/class_07_recycler_fragment" />
+</navigation>
