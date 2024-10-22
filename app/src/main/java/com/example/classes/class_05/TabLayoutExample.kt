@@ -48,7 +48,7 @@ class TabLayoutExample : AppCompatActivity() {
         TabLayoutMediator(tabLayout, view_pager) { tab, position ->
             when (position) {
                 0 -> tab.text = "Chats"
-                1 -> tab.text = "Novedades"
+                1 -> tab.text = "News"
             }
         }.attach()
     }

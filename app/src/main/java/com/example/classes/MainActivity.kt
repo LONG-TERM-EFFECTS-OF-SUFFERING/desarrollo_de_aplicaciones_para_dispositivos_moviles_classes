@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, com.example.classes.class_07.MainActivity::class.java)
                     startActivity(intent)
                 }
+                "08 - Inventory manager" -> {
+                    val intent = Intent(this, com.example.classes.class_08.view.MainActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }

@@ -42,7 +42,7 @@ class OutputFragment : Fragment() {
         val grade_2 = student.grade_2
         val average = (grade_1 + grade_2) / 2
 
-        val text = getString(R.string.class_06_tv_result, name, grade_1, grade_2, average)
+        val text = "Name: %s\nGrade 1: %.2f\nGrade 2: %.2f\nResult: %.2f".format(name, grade_1, grade_2, average)
 
         text_view.text = text
     }

@@ -24,8 +24,7 @@
 			android:id="@+id/btn_calculate_another_grade"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="@string/class_06_btn_calculate_another_grade"
-			android:textSize="20sp"
-			/>
+			android:text="Calculate another grade"
+			android:textSize="20sp" />
 	</LinearLayout>
 </layout>

@@ -35,7 +35,8 @@
 			<activity android:name=".class_05.MainActivity" />
 			<activity android:name=".class_05.TabLayoutExample" />
 			<activity android:name=".class_06.MainActivity" />
-		<activity android:name=".class_07.MainActivity" />
+			<activity android:name=".class_07.MainActivity" />
+			<activity android:name=".class_08.view.MainActivity" />
 		</application>
 
 

@@ -40,7 +40,7 @@ class Class_02 : AppCompatActivity() {
                     bmi in 25.0..29.9 -> category = "Overweight"
                 }
 
-                val text = getString(R.string.class_02_tv_result_text, bmi, category)
+                val text = "Your BMI is %.2f and you are %s".format(bmi, category)
 
                 binding.tvResult.text = text
             }

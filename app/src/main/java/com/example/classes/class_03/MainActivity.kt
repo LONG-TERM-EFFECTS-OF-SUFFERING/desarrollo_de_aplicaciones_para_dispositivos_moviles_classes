@@ -63,8 +63,8 @@ class MainActivity : AppCompatActivity() {
                 val student = Class03Student(name, course, grade_1, grade_2, is_checked)
                 val result = student.calculate_result()
 
-                val text =
-                    getString(R.string.class_03_tv_result, name, course, grade_1, grade_2, result)
+                val text = "Name: %s\nCourse: %s\nGrade 1: %.2f\nGrade 2: %.2f\nResult: %.2f"
+                            .format(student.name, student.course, student.grade_1, student.grade_2, result)
 
                 binding.tvResult.text = text
 

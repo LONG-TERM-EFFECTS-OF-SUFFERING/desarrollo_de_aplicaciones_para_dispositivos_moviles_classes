@@ -27,7 +27,7 @@ class Fragment1 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.class_05_fragmnet_1, container, false)
+        return inflater.inflate(R.layout.class_05_fragment_1, container, false)
     }
 
     companion object {

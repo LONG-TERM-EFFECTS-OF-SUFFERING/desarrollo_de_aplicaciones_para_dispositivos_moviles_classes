@@ -27,8 +27,7 @@
 			app:layout_constraintTop_toTopOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_10"
-			app:layout_constraintStart_toStartOf="parent"
-			/>
+			app:layout_constraintStart_toStartOf="parent" />
 
 		<androidx.recyclerview.widget.RecyclerView
 			android:id="@+id/recyclerview"

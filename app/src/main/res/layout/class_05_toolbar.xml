@@ -17,14 +17,14 @@
 				android:layout_height="?attr/actionBarSize"
 				android:background="@color/white"
 				app:navigationIcon="@drawable/left_arrow"
-				app:title="@string/class_05_toolbar_title"
+				app:title="Cards"
 				app:menu="@menu/class_05_contextual_menu">
 
 
 				<ImageView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:contentDescription="@string/class_05_share_icon_content_description"
+					android:contentDescription="Share icon"
 					android:focusable="true"
 					android:src="@drawable/ic_share_nodes"
 					android:clickable="true"

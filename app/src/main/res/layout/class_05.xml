@@ -24,8 +24,7 @@
 			app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_90"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toBottomOf="parent"
-			app:layout_constraintStart_toStartOf="parent"
-			/>
+			app:layout_constraintStart_toStartOf="parent" />
 
 		<androidx.drawerlayout.widget.DrawerLayout
 			android:id="@+id/drawer_layout"

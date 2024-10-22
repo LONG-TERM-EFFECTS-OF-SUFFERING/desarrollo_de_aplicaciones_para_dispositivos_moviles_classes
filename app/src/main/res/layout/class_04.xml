@@ -66,8 +66,7 @@
 			app:layout_constraintTop_toTopOf="parent"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_10"
 			app:layout_constraintEnd_toStartOf="@id/vertical_guideline_40"
-			android:background="@color/white"
-			/>
+			android:background="@color/white" />
 
 		<View
 			android:id="@+id/black"
@@ -77,8 +76,7 @@
 			app:layout_constraintStart_toEndOf="@id/vertical_guideline_40"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_10"
-			android:background="@color/black"
-			/>
+			android:background="@color/black" />
 
 		<View
 			android:id="@+id/blue"
@@ -88,8 +86,7 @@
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_30"
 			app:layout_constraintStart_toStartOf="parent"
-			android:background="@color/blue"
-			/>
+			android:background="@color/blue" />
 
 		<View
 			android:id="@+id/yellow"
@@ -99,8 +96,7 @@
 			app:layout_constraintEnd_toStartOf="@id/vertical_guideline_80"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_40"
 			app:layout_constraintStart_toStartOf="parent"
-			android:background="@color/yellow"
-			/>
+			android:background="@color/yellow" />
 
 		<View
 			android:id="@+id/green"
@@ -110,8 +106,7 @@
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_40"
 			app:layout_constraintStart_toStartOf="@id/vertical_guideline_80"
-			android:background="@color/green"
-			/>
+			android:background="@color/green" />
 
 		<View
 			android:id="@+id/red"
@@ -121,8 +116,7 @@
 			app:layout_constraintEnd_toEndOf="@id/vertical_guideline_80"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_90"
 			app:layout_constraintStart_toStartOf="parent"
-			android:background="@color/red"
-			/>
+			android:background="@color/red" />
 
 		<View
 			android:id="@+id/purple"
@@ -132,8 +126,7 @@
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_90"
 			app:layout_constraintStart_toEndOf="@id/vertical_guideline_80"
-			android:background="@color/magenta"
-			/>
+			android:background="@color/magenta" />
 
 		<View
 			android:id="@+id/light_blue"
@@ -143,7 +136,6 @@
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toBottomOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
-			android:background="@color/cyan"
-			/>
+			android:background="@color/cyan" />
 	</androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
