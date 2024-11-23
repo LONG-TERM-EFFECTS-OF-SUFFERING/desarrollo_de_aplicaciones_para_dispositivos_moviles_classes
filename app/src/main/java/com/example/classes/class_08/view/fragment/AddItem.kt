@@ -70,11 +70,12 @@ class AddItemFragment : Fragment() {
 
     private fun product_list_observer() {
         inventory_view_model.get_products()
-        inventory_view_model.product_list.observe(viewLifecycleOwner){ lista ->
+        inventory_view_model.product_list.observe(viewLifecycleOwner){ list ->
 
-            val product = lista[2]
-            Glide.with(binding.root.context).load(product.id).into(binding.ivImagenApi)
-            binding.tvTitleProduct.text = product.title
+            val product = list[2]
+
+            Glide.with(binding.root.context).load(product.id).into(binding.ivApiImage)
+            binding.tvProductTitle.text = product.title
         }
     }
 }

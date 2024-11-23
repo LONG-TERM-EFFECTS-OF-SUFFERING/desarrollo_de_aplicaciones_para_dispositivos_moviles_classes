@@ -64,6 +64,22 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, com.example.classes.class_08.view.MainActivity::class.java)
                     startActivity(intent)
                 }
+                "Project 1 - Bottle flip" -> {
+                    val intent = Intent(this, com.example.classes.project_1.MainActivity::class.java)
+                    startActivity(intent)
+                }
+                "09 - Inventory manager with dagger hilt" -> {
+                    val intent = Intent(this, com.example.classes.class_09.view.MainActivity::class.java)
+                    startActivity(intent)
+                }
+                "10 - Inventory manager with login" -> {
+                    val intent = Intent(this, com.example.classes.class_10.view.LoginActivity::class.java)
+                    startActivity(intent)
+                }
+                "Project 2 - Bottle flip login" -> {
+                    val intent = Intent(this, com.example.classes.project_2.view.LoginActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }

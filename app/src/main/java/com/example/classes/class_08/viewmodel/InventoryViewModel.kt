@@ -15,15 +15,14 @@ class InventoryViewModel(application: Application) : AndroidViewModel(applicatio
     val context = getApplication <Application>()
     private val inventory_repository = InventoryRepository(context)
 
-    private val _inventory_list = MutableLiveData<MutableList<Inventory>>()
+    private val _inventory_list = MutableLiveData <MutableList <Inventory>>()
     val inventory_list: LiveData <MutableList<Inventory>> get() = _inventory_list
 
     private val _progress_state = MutableLiveData(false)
-    val progress_state: LiveData<Boolean> = _progress_state
+    val progress_state: LiveData <Boolean> = _progress_state
 
-    private val _product_list = MutableLiveData<MutableList<ProductModelResponse>>()
-    val product_list: LiveData<MutableList<ProductModelResponse>> = _product_list
-
+    private val _product_list = MutableLiveData <MutableList <ProductModelResponse>>()
+    val product_list: LiveData <MutableList <ProductModelResponse>> = _product_list
 
     fun save_inventory(inventory: Inventory) {
         viewModelScope.launch {

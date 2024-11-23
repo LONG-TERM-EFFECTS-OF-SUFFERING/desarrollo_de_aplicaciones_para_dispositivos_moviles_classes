@@ -12,6 +12,7 @@ import com.example.classes.databinding.Class08ItemDetailsBinding
 import com.example.classes.class_08.model.Inventory
 import com.example.classes.class_08.viewmodel.InventoryViewModel
 
+
 class ItemDetailsFragment : Fragment() {
     private lateinit var binding: Class08ItemDetailsBinding
     private val inventoryViewModel: InventoryViewModel by viewModels()

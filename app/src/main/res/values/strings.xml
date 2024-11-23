@@ -13,5 +13,9 @@
 		<item>06 - Grade calculator with fragments</item>
 		<item>07 - Class 7</item>
 		<item>08 - Inventory manager</item>
+		<item>Project 1 - Bottle flip</item>
+		<item>09 - Inventory manager with dagger hilt</item>
+		<item>10 - Inventory manager with login</item>
+		<item>Project 2 - Bottle flip login</item>
 	</string-array>
 </resources>

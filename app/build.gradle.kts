@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
     id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -41,22 +43,28 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.navigation.fragment.ktx)
 
-    implementation (libs.androidx.room.runtime)
+    implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.common)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
 
 
-    implementation (libs.retrofit)
-    implementation (libs.converter.gson)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 
-    implementation (libs.glide)
+    implementation(libs.glide)
+
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.auth.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

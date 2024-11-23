@@ -66,7 +66,7 @@
 			app:layout_constraintStart_toStartOf="parent" />
 
 		<Button
-			android:id="@+id/btnSaveInventory"
+			android:id="@+id/btn_save_inventory"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="30dp"
@@ -77,15 +77,15 @@
 			app:layout_constraintStart_toStartOf="parent" />
 
 		<ImageView
-			android:id="@+id/ivImagenApi"
+			android:id="@+id/iv_api_image"
 			android:layout_width="150dp"
 			android:layout_height="150dp"
 			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintBottom_toTopOf="@+id/tvTitleProduct"
+			app:layout_constraintBottom_toTopOf="@+id/tv_product_title"
 			app:layout_constraintStart_toStartOf="parent" />
 
 		<TextView
-			android:id="@+id/tvTitleProduct"
+			android:id="@+id/tv_product_title"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:textStyle="bold"

@@ -8,6 +8,7 @@ import com.example.classes.databinding.Class08ItemBinding
 import com.example.classes.class_08.model.Inventory
 import com.example.classes.class_08.view.viewholder.InventoryViewHolder
 
+
 class InventoryAdapter(private val listInventory:MutableList<Inventory>, private val navController: NavController):RecyclerView.Adapter<InventoryViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): InventoryViewHolder {
         val binding = Class08ItemBinding.inflate(LayoutInflater.from(parent.context),parent, false)

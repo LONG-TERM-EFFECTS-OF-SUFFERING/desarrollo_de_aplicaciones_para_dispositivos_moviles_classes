@@ -8,7 +8,7 @@ import com.example.classes.class_08.model.Inventory
 import com.example.classes.class_08.utils.Constants.NAME_BD
 
 
-@Database(entities = [Inventory::class], version = 1)
+@Database(entities = [Inventory::class], version = 1,  exportSchema = false)
 abstract class InventoryDB : RoomDatabase() {
     abstract fun inventoryDao(): InventoryDao
 

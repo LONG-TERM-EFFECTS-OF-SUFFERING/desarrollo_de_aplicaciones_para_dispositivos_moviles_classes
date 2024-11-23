@@ -11,6 +11,7 @@
 	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 	<application
 		android:allowBackup="true"
+		android:name="com.example.classes.class_09.AppExample"
 		android:dataExtractionRules="@xml/data_extraction_rules"
 		android:fullBackupContent="@xml/backup_rules"
 		android:icon="@mipmap/ic_launcher"
@@ -37,6 +38,11 @@
 			<activity android:name=".class_06.MainActivity" />
 			<activity android:name=".class_07.MainActivity" />
 			<activity android:name=".class_08.view.MainActivity" />
+			<activity android:name=".project_1.MainActivity" />
+			<activity android:name=".class_09.view.MainActivity" />
+			<activity android:name=".class_10.view.MainActivity" />
+			<activity android:name=".class_10.view.LoginActivity" />
+			<activity android:name=".project_2.view.LoginActivity" />
 		</application>
 
 
