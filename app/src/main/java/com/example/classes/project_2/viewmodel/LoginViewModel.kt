@@ -15,18 +15,22 @@ class LoginViewModel @Inject constructor(
 	private val repository: LoginRepository
 
 ): ViewModel() {
-	private val _isRegistered = MutableLiveData<UserResponse>()
-	val isRegistered: LiveData<UserResponse> = _isRegistered
+	private val _is_registered = MutableLiveData <UserResponse>()
+	val is_registered: LiveData <UserResponse> = _is_registered
 
 
-	fun registerUser(userRequest: UserRequest) {
-		repository.registerUser(userRequest) { userResponse ->
-			_isRegistered.value = userResponse
+	fun register_user(user_request: UserRequest) {
+		repository.register_user(user_request) { userResponse ->
+			_is_registered.value = userResponse
 		}
 	}
 
-	fun loginUser(userRequest: UserRequest, isLoggedIn: (Boolean) -> Unit) {
-		repository.loginUser(userRequest, isLoggedIn)
+	fun login_user(user_request: UserRequest, is_logged_in: (Boolean) -> Unit) {
+		repository.login_user(user_request, is_logged_in)
+	}
+
+	fun logout_user() {
+		repository.logout_user()
 	}
 
 	fun session(email: String?, callback: (Boolean) -> Unit) {

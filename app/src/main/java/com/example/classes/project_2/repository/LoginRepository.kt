@@ -10,9 +10,9 @@ import javax.inject.Inject
 class LoginRepository @Inject constructor(
 	private val firebaseAuth: FirebaseAuth
 ) {
-	fun registerUser(userRequest: UserRequest, callback: (UserResponse) -> Unit) {
+	fun register_user(user_request: UserRequest, callback: (UserResponse) -> Unit) {
 		try {
-			firebaseAuth.createUserWithEmailAndPassword(userRequest.email, userRequest.password)
+			firebaseAuth.createUserWithEmailAndPassword(user_request.email, user_request.password)
 				.addOnCompleteListener { task ->
 					lateinit var userResponse: UserResponse
 
@@ -20,19 +20,19 @@ class LoginRepository @Inject constructor(
 						val email = task.result?.user?.email
 						userResponse = UserResponse(
 								email = email,
-								is_registered = true,
+								isRegistered = true,
 								message = "Successful register"
 							)
 					} else {
 						val error = task.exception
 						userResponse = if (error is FirebaseAuthUserCollisionException) {
 									UserResponse(
-										is_registered = false,
+										isRegistered = false,
 										message = "The user already exists"
 									)
 								} else {
 									UserResponse(
-										is_registered = false,
+										isRegistered = false,
 										message = "Error in registration"
 									)
 								}
@@ -42,16 +42,16 @@ class LoginRepository @Inject constructor(
 		} catch (e: Exception) {
 			callback(
 				UserResponse(
-					is_registered = false,
+					isRegistered = false,
 					message = e.message ?: "Unknown error"
 				)
 			)
 		}
 	}
 
-	fun loginUser(userRequest: UserRequest, callback: (Boolean) -> Unit) {
-		val email = userRequest.email
-		val password = userRequest.password
+	fun login_user(user_request: UserRequest, callback: (Boolean) -> Unit) {
+		val email = user_request.email
+		val password = user_request.password
 
 		if (email.isNotEmpty() && password.isNotEmpty()) {
 			firebaseAuth.signInWithEmailAndPassword(email, password)
@@ -65,7 +65,7 @@ class LoginRepository @Inject constructor(
 			callback(false)
 	}
 
-	fun logoutUser() {
+	fun logout_user() {
 		firebaseAuth.signOut()
 	}
 }
